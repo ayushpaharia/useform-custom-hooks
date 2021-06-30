@@ -1,0 +1,21 @@
+.navbar__item {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar__item__heading {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.navbar__item__dropdown {
+  padding-top: 4px;
+  margin-left: 2px;
+}
+
+.active {
+  color: var(--active);
+  text-decoration: underline;
+}

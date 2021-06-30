@@ -1,0 +1,97 @@
+.card__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__container > img {
+  flex: 0.8;
+  object-fit: cover;
+}
+
+.card__footer {
+  flex: 0.2;
+  display: flex;
+}
+
+.card__date {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.card__date__day {
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+.card__date__month {
+  font-weight: 400;
+  position: relative;
+  margin-top: -5px;
+}
+.card__date__hours {
+  font-weight: 600;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.card__title {
+  padding-bottom: 8px;
+  color: var(--active);
+  font-weight: 800;
+}
+
+.card__by {
+  display: flex;
+  align-items: center;
+}
+
+.card__by > span {
+  margin-left: 5px;
+  color: var(--muted);
+  font-size: 0.77em;
+}
+
+.card__overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 215px;
+  width: 100%;
+  height: 70%;
+  background: rgba(79, 204, 235, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.card__overlay > button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button__primary {
+  background-color: var(--active) !important;
+  margin-bottom: 10px;
+}
+.button__secondary {
+  border: 1px solid white !important;
+}

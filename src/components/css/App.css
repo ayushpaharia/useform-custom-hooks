@@ -1,0 +1,28 @@
+:root {
+  --background: #e7f9fb;
+  --active: #fec412;
+  --secondary: #4fcceb;
+  --muted: #8d8d8d;
+  --muted-2: rgb(199, 199, 199);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+.app {
+  background-color: var(--background);
+  height: 100vh;
+}
+
+.app__container {
+  display: grid;
+  padding-top: 8rem !important;
+  padding: 4rem;
+  background-color: var(--active);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 60px;
+}

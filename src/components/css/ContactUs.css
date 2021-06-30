@@ -1,0 +1,122 @@
+.contact {
+}
+.contact__outerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+}
+.contact__innerContainer {
+  padding: 40px;
+  border-radius: 30px;
+  border: 2px dashed var(--muted-2);
+}
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+.contact__innerContainer > h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--active);
+  padding-bottom: 50px;
+}
+
+.input__field {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+.input__field > label {
+  color: var(--muted-2);
+  font-size: 8px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.input__field > input {
+  font-size: 12px;
+  padding: 15px 20px;
+  border: 1px solid var(--muted-2);
+  border-radius: 20px;
+}
+
+.input__area {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.input__area > label {
+  font-size: 8px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  color: var(--muted-2);
+}
+.input__area > textarea {
+  padding: 15px 20px;
+  font-size: 12px;
+  border: 1px solid var(--muted-2);
+  height: 100px;
+  border-radius: 20px 20px 0 20px;
+}
+.form__button {
+  position: relative;
+  margin-left: 145px;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.submit__button {
+  position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--active) !important;
+  margin-bottom: 10px;
+}
+
+.form__error__field {
+  border: 1px solid red !important;
+}
+.form__error__label {
+  color: red !important;
+}
+.placeholder__error::placeholder {
+  color: red;
+}
+
+.form__errors__outer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form__errors__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35%;
+  padding: 34px 40px;
+  border-radius: 40px;
+  border: 2px dashed var(--muted-2);
+}
+
+.form__errors__inner > p {
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+.form__errors__inner > p > span {
+  margin-left: 4px;
+}
